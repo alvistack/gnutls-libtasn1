@@ -1,0 +1,9 @@
+*.substvars
+*debhelper*
+.debhelper
+autoreconf.*
+files
+libtasn1-6
+libtasn1-6-dev
+libtasn1-bin
+tmp

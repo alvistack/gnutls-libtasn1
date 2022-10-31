@@ -1,0 +1,5 @@
+libtasn1 source: file-without-copyright-information
+libtasn1 source: no-debian-changes
+libtasn1 source: not-binnmuable-any-depends-any
+libtasn1 source: source-contains-prebuilt-windows-binary
+libtasn1 source: weak-library-dev-dependency

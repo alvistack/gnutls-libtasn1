@@ -1,0 +1,5 @@
+libtasn1 (100:4.19.0-1) UNRELEASED; urgency=medium
+
+  * https://github.com/gnutls/libtasn1/releases/tag/v4.19.0
+
+ -- Wong Hoi Sing Edison <hswong3i@pantarei-design.com>  Mon, 24 Oct 2022 23:06:46 +0800

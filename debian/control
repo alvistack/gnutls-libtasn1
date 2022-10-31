@@ -1,0 +1,54 @@
+Source: libtasn1
+Section: libs
+Priority: optional
+Standards-Version: 4.5.0
+Maintainer: Wong Hoi Sing Edison <hswong3i@gmail.com>
+Homepage: https://github.com/gnutls/libtasn1/tags
+Vcs-Browser: https://github.com/alvistack/gnutls-libtasn1
+Vcs-Git: https://github.com/alvistack/gnutls-libtasn1.git
+Build-Depends:
+ debhelper,
+ debhelper-compat (= 10),
+ autoconf,
+ automake,
+ bison,
+ libtool,
+
+Package: libtasn1-6
+Architecture: amd64
+Description: Manage ASN.1 structures (runtime)
+ This package contains runtime libraries.
+Pre-Depends:
+ ${misc:Pre-Depends},
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+
+Package: libtasn1-6-dev
+Section: libdevel
+Architecture: amd64
+Description: Manage ASN.1 structures (development)
+ This package contains header files and libraries for static linking.
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+ libtasn1-6 (= ${source:Version}),
+Conflicts:
+ libtasn1-dev,
+Provides:
+ libtasn1-dev,
+
+Package: libtasn1-bin
+Section: devel
+Architecture: amd64
+Description: Manage ASN.1 structures (binaries)
+ This package contains programs to encode, decode and parse asn1 data
+ structures.
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+ libtasn1-6 (= ${source:Version}),
+Replaces:
+ libtasn1-3-bin,
+Breaks:
+ libtasn1-3-bin (<< 3),
